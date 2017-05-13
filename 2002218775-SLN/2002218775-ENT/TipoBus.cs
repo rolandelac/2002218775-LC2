@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace _2002218775_ENT
 {
-    public class TipoBus
+    public enum TipoBus
     {
+        Publico, Privado, NoDefinido
     }
 }

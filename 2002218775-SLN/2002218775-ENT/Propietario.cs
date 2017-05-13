@@ -8,5 +8,11 @@ namespace _2002218775_ENT
 {
     public class Propietario
     {
+        public int PropietarioId { get; set; }
+
+        public string DNI { get; set; }
+        public string Nombres { get; set; }
+        public string Apellidos { get; set; }
+        public string LicenciaConducir { get; set; }
     }
 }

@@ -8,5 +8,14 @@ namespace _2002218775_ENT
 {
     public class Asiento
     {
+        public int AsientoId { get; set; }
+
+        public Cinturon Cinturon { get; set; }
+        public string NumSerie { get; set; }
+
+        public Asiento()
+        {
+            Cinturon = new Cinturon();
+        }
     }
 }

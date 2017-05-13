@@ -6,7 +6,38 @@ using System.Threading.Tasks;
 
 namespace _2002218775_ENT
 {
-    public class Carro
+    public abstract class Carro
     {
+        public int CarroId { get; set; }
+
+        public List<Llanta> Llantas { get; set; }
+        public List<Asiento> Asientos { get; set; }
+        public string NumSerieMotor { get; set; }
+        public string NumSerieChasis { get; set; }
+
+        public Volante Volante { get; set; }
+        public Parabrisa Parabrisas { get; set; }
+        public Propietario Propietario { get; set; }
+
+        public TipoCarro TipoCarro { get; set; }
+
+
+        public Carro()
+        {
+            Llantas = new List<Llanta>();
+            Asientos = new List<Asiento>();
+        }
+
+        public Carro(Volante volante, Parabrisa parabrisas, int numLlantas, int numAsientos, Propietario propietario, TipoCarro tipoCarro)
+        {
+            Llantas = new List<Llanta>(numLlantas);
+            Asientos = new List<Asiento>(numAsientos);
+
+            Volante = volante;
+            Parabrisas = parabrisas;
+            Propietario = propietario;
+
+            TipoCarro = tipoCarro;
+        }
     }
 }
