@@ -13,7 +13,7 @@ namespace _2002218775_ENT
         public TipoBus TipoBus { get; set; }
 
 
-        public Bus(Volante volante, Parabrisa parabrisa, int numLlantas,
+        public Bus(Volante volante, Parabrisas parabrisa, int numLlantas,
                          int numAsientos, Propietario propietario, TipoCarro tipoCarro, TipoBus tipoBus)
             : base(volante, parabrisa, numLlantas, numAsientos, propietario, tipoCarro)
         {

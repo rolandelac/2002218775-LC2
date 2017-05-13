@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace _2002218775_ENT
 {
-    public class Automovil:Carro
+    public class Automovil : Carro
     {
 
         public int AutomovilId { get; set; }
 
         public TipoAuto TipoAuto { get; set; }
 
-        public Automovil(Volante volante, Parabrisa parabrisa, int numLlantas,
+        public Automovil(Volante volante, Parabrisas parabrisa, int numLlantas,
                          int numAsientos, Propietario propietario, TipoCarro tipoCarro, TipoAuto tipoAuto)
             : base(volante, parabrisa, numLlantas, numAsientos, propietario, tipoCarro)
         {

@@ -16,8 +16,9 @@ namespace _2002218775_ENT
         public string NumSerieChasis { get; set; }
 
         public Volante Volante { get; set; }
-        public Parabrisa Parabrisas { get; set; }
+        public Parabrisas Parabrisas { get; set; }
         public Propietario Propietario { get; set; }
+        public Ensambladora Ensambladora { get; set; }
 
         public TipoCarro TipoCarro { get; set; }
 
@@ -28,7 +29,7 @@ namespace _2002218775_ENT
             Asientos = new List<Asiento>();
         }
 
-        public Carro(Volante volante, Parabrisa parabrisas, int numLlantas, int numAsientos, Propietario propietario, TipoCarro tipoCarro)
+        public Carro(Volante volante, Parabrisas parabrisas, int numLlantas, int numAsientos, Propietario propietario, TipoCarro tipoCarro)
         {
             Llantas = new List<Llanta>(numLlantas);
             Asientos = new List<Asiento>(numAsientos);

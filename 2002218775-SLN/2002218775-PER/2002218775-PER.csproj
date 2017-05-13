@@ -48,6 +48,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="2002218775DbContext.cs" />
+    <Compile Include="EntitesConfigurations\AsientoConfiguration.cs" />
+    <Compile Include="EntitesConfigurations\AutomovilConfiguration.cs" />
+    <Compile Include="EntitesConfigurations\BusConfiguration.cs" />
+    <Compile Include="EntitesConfigurations\CarroConfiguration.cs" />
+    <Compile Include="EntitesConfigurations\CinturonConfiguration.cs" />
+    <Compile Include="EntitesConfigurations\EnsambladoraConfiguration.cs" />
+    <Compile Include="EntitesConfigurations\LlantaConfiguration.cs" />
+    <Compile Include="EntitesConfigurations\ParabrisaConfiguration.cs" />
+    <Compile Include="EntitesConfigurations\PropietarioConfiguration.cs" />
+    <Compile Include="EntitesConfigurations\TipoAutoConfiguration.cs" />
+    <Compile Include="EntitesConfigurations\TipoBusConfiguration.cs" />
+    <Compile Include="EntitesConfigurations\TipoCarroConfiguration.cs" />
+    <Compile Include="EntitesConfigurations\VolanteConfiguration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

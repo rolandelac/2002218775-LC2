@@ -14,5 +14,8 @@ namespace _2002218775_ENT
         public string Nombres { get; set; }
         public string Apellidos { get; set; }
         public string LicenciaConducir { get; set; }
+
+        public int CarroId { get; set; }
+        public Carro Carro { get; set; }
     }
 }
