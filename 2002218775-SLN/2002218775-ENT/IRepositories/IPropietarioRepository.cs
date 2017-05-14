@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _2002218775_PER.EntitesConfigurations
+namespace _2002218775_ENT.IRepositories
 {
-    public class TipoBusConfiguration
+    public interface IPropietarioRepository : IRepository<Propietario>
     {
     }
 }
