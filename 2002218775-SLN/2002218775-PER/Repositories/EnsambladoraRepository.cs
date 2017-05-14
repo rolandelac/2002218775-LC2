@@ -10,5 +10,16 @@ namespace _2002218775_PER.Repositories
 {
     public class EnsambladoraRepository : Repository<Ensambladora>, IEnsambladoraRepository
     {
+        private readonly _2002218775DbContext _Context;
+
+        public EnsambladoraRepository(_2002218775DbContext context)
+        {
+            _Context = context;
+        }
+
+        private EnsambladoraRepository()
+        {
+
+        }
     }
 }

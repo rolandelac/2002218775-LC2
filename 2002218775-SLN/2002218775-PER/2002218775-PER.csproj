@@ -69,6 +69,7 @@
     <Compile Include="Repositories\ParabrisasRepository.cs" />
     <Compile Include="Repositories\PropietarioRepository.cs" />
     <Compile Include="Repositories\Repository.cs" />
+    <Compile Include="Repositories\UnityOfWork.cs" />
     <Compile Include="Repositories\VolanteRepository.cs" />
   </ItemGroup>
   <ItemGroup>

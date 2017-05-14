@@ -10,5 +10,16 @@ namespace _2002218775_PER.Repositories
 {
     public class CarroRepository : Repository<Carro>, ICarroRepository
     {
+        private readonly _2002218775DbContext _Context;
+
+        public CarroRepository(_2002218775DbContext context)
+        {
+            _Context = context;
+        }
+
+        private CarroRepository()
+        {
+
+        }
     }
 }

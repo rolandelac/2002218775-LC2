@@ -10,5 +10,21 @@ namespace _2002218775_PER.Repositories
 {
     public class AutomovilRepository : Repository<Automovil>, IAutomovilRepository
     {
+        private readonly _2002218775DbContext _Context;
+
+        private AutomovilRepository()
+        {
+
+        }
+
+        public AutomovilRepository(_2002218775DbContext context)
+        {
+            _Context = context;
+        }
+
+        public IEnumerable<Automovil> GetClassificatedAuthors(TipoAuto TipoAuto)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

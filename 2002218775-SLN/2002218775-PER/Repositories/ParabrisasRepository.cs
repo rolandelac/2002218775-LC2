@@ -10,5 +10,16 @@ namespace _2002218775_PER.Repositories
 {
     public class ParabrisasRepository : Repository<Parabrisas>, IParabrisasRepository
     {
+        private readonly _2002218775DbContext _Context;
+
+        public ParabrisasRepository(_2002218775DbContext context)
+        {
+            _Context = context;
+        }
+
+        private ParabrisasRepository()
+        {
+
+        }
     }
 }

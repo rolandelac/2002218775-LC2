@@ -10,5 +10,15 @@ namespace _2002218775_PER.Repositories
 {
     public class BusRepository : Repository<Bus>, IBusRepository
     {
+        private readonly _2002218775DbContext _Context;
+
+        public BusRepository(_2002218775DbContext context)
+        {
+            _Context = context;
+        }
+        private BusRepository()
+        {
+
+        }
     }
 }

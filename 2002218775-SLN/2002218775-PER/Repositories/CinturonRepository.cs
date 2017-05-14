@@ -10,5 +10,16 @@ namespace _2002218775_PER.Repositories
 {
     public class CinturonRepository : Repository<Cinturon>, ICinturonRepository
     {
+        private readonly _2002218775DbContext _Context;
+
+        public CinturonRepository(_2002218775DbContext context)
+        {
+            _Context = context;
+        }
+
+        private CinturonRepository()
+        {
+
+        }
     }
 }

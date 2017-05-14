@@ -58,6 +58,7 @@
     <Compile Include="IRepositories\IParabrisasRepository.cs" />
     <Compile Include="IRepositories\IPropietarioRepository.cs" />
     <Compile Include="IRepositories\IRepository.cs" />
+    <Compile Include="IRepositories\IUnityOfWork.cs" />
     <Compile Include="IRepositories\IVolanteRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Entities\Propietario.cs" />
