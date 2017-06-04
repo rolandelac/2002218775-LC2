@@ -10,21 +10,17 @@ namespace _2002218775_PER.Repositories
     public class UnityOfWork : IUnityOfWork
     {
         private readonly _2002218775DbContext _Context;
-        private static UnityOfWork _Instance;
-        private static readonly object _Lock = new object();
+
 
 
         public IAsientoRepository Asientos { get; private set; }
 
-        public IAutomovilRepository Automoviles { get; private set; }
 
-        public IBusRepository Buses { get; private set; }
 
         public ICarroRepository Carros { get; private set; }
 
         public ICinturonRepository Cinturones { get; private set; }
 
-        public IEnsambladoraRepository Ensambladoras { get; private set; }
 
         public ILlantaRepository Llantas { get; private set; }
 
@@ -39,11 +35,8 @@ namespace _2002218775_PER.Repositories
             _Context = new _2002218775DbContext();
 
             Asientos = new AsientoRepository(_Context);
-            Automoviles = new AutomovilRepository(_Context);
-            Buses = new BusRepository(_Context);
             Carros = new CarroRepository(_Context);
             Cinturones = new CinturonRepository(_Context);
-            Ensambladoras = new EnsambladoraRepository(_Context);
             Llantas = new LlantaRepository(_Context);
             Parabrisas = new ParabrisasRepository(_Context);
             Propietarios = new PropietarioRepository(_Context);
@@ -51,19 +44,7 @@ namespace _2002218775_PER.Repositories
 
         }
 
-        public static UnityOfWork Instance
-        {
-            get
-            {
-                lock (_Lock)
-                {
-                    if (_Instance == null)
-                        _Instance = new UnityOfWork();
-                }
 
-                return _Instance;
-            }
-        }
 
         public void Dispose()
         {

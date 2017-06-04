@@ -20,6 +20,8 @@ namespace _2002218775_PER.EntitesConfigurations
             Property(a => a.NumSerieMotor);
             Property(a => a.NumSerieChasis);
 
+            //Map<Automovil>(m => m.Requires("Discriminator").HasValue("Automovil"));
+
             //Relations Configurations
 
             //relacion agregacion (1 a 1)
@@ -43,6 +45,9 @@ namespace _2002218775_PER.EntitesConfigurations
             //relacion agregacion (1 a 1)
             HasRequired(c => c.Propietario)
                 .WithRequiredPrincipal(c => c.Carro);
+
+
+
 
 
         }

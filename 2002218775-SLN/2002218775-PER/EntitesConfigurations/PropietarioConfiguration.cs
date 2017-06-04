@@ -13,7 +13,7 @@ namespace _2002218775_PER.EntitesConfigurations
         public PropietarioConfiguration()
         {
             //Table Configurations
-            ToTable("Asientos");
+            ToTable("Propietarios");
 
             HasKey(a => a.PropietarioId);
 

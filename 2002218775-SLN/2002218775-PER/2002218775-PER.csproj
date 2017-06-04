@@ -49,23 +49,21 @@
   <ItemGroup>
     <Compile Include="2002218775DbContext.cs" />
     <Compile Include="EntitesConfigurations\AsientoConfiguration.cs" />
-    <Compile Include="EntitesConfigurations\AutomovilConfiguration.cs" />
-    <Compile Include="EntitesConfigurations\BusConfiguration.cs" />
     <Compile Include="EntitesConfigurations\CarroConfiguration.cs" />
     <Compile Include="EntitesConfigurations\CinturonConfiguration.cs" />
-    <Compile Include="EntitesConfigurations\EnsambladoraConfiguration.cs" />
     <Compile Include="EntitesConfigurations\LlantaConfiguration.cs" />
     <Compile Include="EntitesConfigurations\ParabrisaConfiguration.cs" />
     <Compile Include="EntitesConfigurations\PropietarioConfiguration.cs" />
     <Compile Include="EntitesConfigurations\VolanteConfiguration.cs" />
+    <Compile Include="Migrations\201706010135051_InitialModel.cs" />
+    <Compile Include="Migrations\201706010135051_InitialModel.Designer.cs">
+      <DependentUpon>201706010135051_InitialModel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\AsientoRepository.cs" />
-    <Compile Include="Repositories\AutomovilRepository.cs" />
-    <Compile Include="Repositories\BusRepository.cs" />
     <Compile Include="Repositories\CarroRepository.cs" />
     <Compile Include="Repositories\CinturonRepository.cs" />
-    <Compile Include="Repositories\EnsambladoraRepository.cs" />
     <Compile Include="Repositories\LlantaRepository.cs" />
     <Compile Include="Repositories\ParabrisasRepository.cs" />
     <Compile Include="Repositories\PropietarioRepository.cs" />
@@ -82,6 +80,11 @@
       <Project>{48cb3be2-90fe-442c-98e7-bd7f2c7952fd}</Project>
       <Name>2002218775-ENT</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201706010135051_InitialModel.resx">
+      <DependentUpon>201706010135051_InitialModel.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

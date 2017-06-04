@@ -49,11 +49,8 @@
     <Compile Include="Entities\Llanta.cs" />
     <Compile Include="Entities\Parabrisas.cs" />
     <Compile Include="IRepositories\IAsientoRepository.cs" />
-    <Compile Include="IRepositories\IAutomovilRepository.cs" />
-    <Compile Include="IRepositories\IBusRepository.cs" />
     <Compile Include="IRepositories\ICarroRepository.cs" />
     <Compile Include="IRepositories\ICinturonRepository.cs" />
-    <Compile Include="IRepositories\IEnsambladoraRepository.cs" />
     <Compile Include="IRepositories\ILlantaRepository.cs" />
     <Compile Include="IRepositories\IParabrisasRepository.cs" />
     <Compile Include="IRepositories\IPropietarioRepository.cs" />

@@ -13,15 +13,12 @@ namespace _2002218775_PER
     {
         public DbSet<Asiento> Asientos { get; set; }
 
-        public DbSet<Automovil> Automoviles { get; set; }
 
-        public DbSet<Bus> Buses { get; set; }
 
         public DbSet<Carro> Carros { get; set; }
 
         public DbSet<Cinturon> Cinturones { get; set; }
 
-        public DbSet<Ensambladora> Ensambladoras { get; set; }
 
         public DbSet<Llanta> Llantas { get; set; }
 
@@ -31,20 +28,22 @@ namespace _2002218775_PER
 
         public DbSet<Volante> Volantes { get; set; }
 
+        public _2002218775DbContext() : base ("RolanConnectionString")
+        {
+
+        }
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Configurations.Add(new AsientoConfiguration());
-            modelBuilder.Configurations.Add(new AutomovilConfiguration());
-            modelBuilder.Configurations.Add(new BusConfiguration());
+
             modelBuilder.Configurations.Add(new CarroConfiguration());
+
             modelBuilder.Configurations.Add(new CinturonConfiguration());
-            modelBuilder.Configurations.Add(new EnsambladoraConfiguration());
             modelBuilder.Configurations.Add(new LlantaConfiguration());
             modelBuilder.Configurations.Add(new ParabrisaConfiguration());
             modelBuilder.Configurations.Add(new PropietarioConfiguration());
-            //modelBuilder.Configurations.Add(new TipoAutoConfiguration());
-            //modelBuilder.Configurations.Add(new TipoBusConfiguration());
-            //modelBuilder.Configurations.Add(new TipoCarroConfiguration());
+
             modelBuilder.Configurations.Add(new VolanteConfiguration());
 
 
