@@ -50,7 +50,8 @@ namespace _2002218775_PER
             base.OnModelCreating(modelBuilder);
         }
 
-
+        //public System.Data.Entity.DbSet<_2002218775_ENT.Automovil> Carroes { get; set; }
+        
 
     }
 }

@@ -10,16 +10,8 @@ namespace _2002218775_PER.Repositories
 {
     public class VolanteRepository : Repository<Volante>, IVolanteRepository
     {
-        private readonly _2002218775DbContext _Context;
-
-        public VolanteRepository(_2002218775DbContext context)
+        public VolanteRepository(_2002218775DbContext context) : base(context)
         {
-            _Context = context;
-        }
-
-        private VolanteRepository()
-        {
-
         }
     }
 }

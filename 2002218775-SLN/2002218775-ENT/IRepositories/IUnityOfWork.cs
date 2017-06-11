@@ -18,6 +18,7 @@ namespace _2002218775_ENT.IRepositories
 
         int SaveChanges();
 
+        void StateModified(object entity);
 
     }
 }

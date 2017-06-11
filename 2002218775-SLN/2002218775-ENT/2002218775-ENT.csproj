@@ -31,6 +31,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -59,9 +60,9 @@
     <Compile Include="IRepositories\IVolanteRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Entities\Propietario.cs" />
-    <Compile Include="Entities\TipoAuto.cs" />
-    <Compile Include="Entities\TipoBus.cs" />
-    <Compile Include="Entities\TipoCarro.cs" />
+    <Compile Include="Enum\TipoAuto.cs" />
+    <Compile Include="Enum\TipoBus.cs" />
+    <Compile Include="Enum\TipoCarro.cs" />
     <Compile Include="Entities\Volante.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

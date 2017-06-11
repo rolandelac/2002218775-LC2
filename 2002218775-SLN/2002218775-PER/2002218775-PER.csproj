@@ -55,9 +55,9 @@
     <Compile Include="EntitesConfigurations\ParabrisaConfiguration.cs" />
     <Compile Include="EntitesConfigurations\PropietarioConfiguration.cs" />
     <Compile Include="EntitesConfigurations\VolanteConfiguration.cs" />
-    <Compile Include="Migrations\201706010135051_InitialModel.cs" />
-    <Compile Include="Migrations\201706010135051_InitialModel.Designer.cs">
-      <DependentUpon>201706010135051_InitialModel.cs</DependentUpon>
+    <Compile Include="Migrations\201706102127132_InitialModel.cs" />
+    <Compile Include="Migrations\201706102127132_InitialModel.Designer.cs">
+      <DependentUpon>201706102127132_InitialModel.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -82,8 +82,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201706010135051_InitialModel.resx">
-      <DependentUpon>201706010135051_InitialModel.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201706102127132_InitialModel.resx">
+      <DependentUpon>201706102127132_InitialModel.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

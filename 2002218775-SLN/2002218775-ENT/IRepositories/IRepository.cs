@@ -19,12 +19,12 @@ namespace _2002218775_ENT.IRepositories
         IEnumerable<TEntity> Find(Expression<Func<TEntity, bool>> predicate);
 
         //UPDATES
-        void Update(TEntity entity);
-        void UpdateRange(IEnumerable<TEntity> entities);
+        //void Update(TEntity entity);
+        //void UpdateRange(IEnumerable<TEntity> entities);
 
         //DELETES
-        void Remove(TEntity entity);
-        void RemoveRange(IEnumerable<TEntity> entities);
+        void Delete(TEntity entity);
+        void DeleteRange(IEnumerable<TEntity> entities);
 
     }
 }

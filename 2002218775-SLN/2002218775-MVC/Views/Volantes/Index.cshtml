@@ -1,0 +1,46 @@
+﻿@model IEnumerable<_2002218775_ENT.Volante>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Carro.NumSerieMotor)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NumSerie)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CarroId)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Carro.NumSerieMotor)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NumSerie)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CarroId)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.VolanteId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.VolanteId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.VolanteId })
+        </td>
+    </tr>
+}
+
+</table>

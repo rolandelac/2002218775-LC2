@@ -10,16 +10,8 @@ namespace _2002218775_PER.Repositories
 {
     public class PropietarioRepository : Repository<Propietario>, IPropietarioRepository
     {
-        private readonly _2002218775DbContext _Context;
-
-        public PropietarioRepository(_2002218775DbContext context)
+        public PropietarioRepository(_2002218775DbContext context) : base(context)
         {
-            _Context = context;
-        }
-
-        private PropietarioRepository()
-        {
-
         }
     }
 }

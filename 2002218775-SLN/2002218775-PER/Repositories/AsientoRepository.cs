@@ -10,16 +10,8 @@ namespace _2002218775_PER.Repositories
 {
     public class AsientoRepository : Repository<Asiento>, IAsientoRepository
     {
-        private readonly _2002218775DbContext _Context;
-
-        public AsientoRepository(_2002218775DbContext context)
+        public AsientoRepository(_2002218775DbContext context) : base(context)
         {
-            _Context = context;
-        }
-
-        private AsientoRepository()
-        {
-
         }
     }
 }

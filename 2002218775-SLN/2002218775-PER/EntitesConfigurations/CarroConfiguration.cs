@@ -20,7 +20,11 @@ namespace _2002218775_PER.EntitesConfigurations
             Property(a => a.NumSerieMotor);
             Property(a => a.NumSerieChasis);
 
-            //Map<Automovil>(m => m.Requires("Discriminator").HasValue("Automovil"));
+            //relacion herencia: automovil hereda de carro
+            Map<Automovil>(m => m.Requires("Discriminator").HasValue("Automovil"));
+
+            //herencia: bus hereda de carro
+            Map<Bus>(m => m.Requires("Discriminator").HasValue("Bus"));
 
             //Relations Configurations
 
@@ -32,15 +36,13 @@ namespace _2002218775_PER.EntitesConfigurations
             HasRequired(c => c.Volante)
                 .WithRequiredPrincipal(c => c.Carro);
 
-            //relacion herencia: automovil hereda de carro
-            Map<Automovil>(m => m.Requires("Discriminator").HasValue("Automovil"));
+            
 
             //relacion composicion (1 a *)
             HasRequired(c => c.Ensambladora)
                 .WithMany(c => c.Carros);
 
-            //herencia: bus hereda de carro
-            Map<Bus>(m => m.Requires("Discriminator").HasValue("Bus"));
+
 
             //relacion agregacion (1 a 1)
             HasRequired(c => c.Propietario)
